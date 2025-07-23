@@ -8,9 +8,9 @@ import ApiContext from './context/ApiContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ApiContext>
-    <HashRouterRouter>
+    <HashRouter>
      <App />
-    </HashRouterRouter>
+    </HashRouter>
     </ApiContext>
    
   </StrictMode>,
