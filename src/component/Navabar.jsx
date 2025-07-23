@@ -42,7 +42,8 @@ export default function Navbar() {
                 </div>
                 <nav className="flex flex-col items-center gap-7 p-4 space-y-3  text-gray-800 text-2xl my-font font-semibold">
                     <NavLink to="/" onClick={toggleSidebar}>Home</NavLink>
-                    <NavLink to="/ourmenu" onClick={toggleSidebar}>OurMenu</NavLink>
+                <NavLink to="/about" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">About</NavLink>
+
                     <NavLink to="/testi" onClick={toggleSidebar}>Pages</NavLink>
                     <NavLink to="/account" onClick={toggleSidebar}>Login</NavLink>
                     <NavLink to="/contact" onClick={toggleSidebar}>Contact</NavLink>

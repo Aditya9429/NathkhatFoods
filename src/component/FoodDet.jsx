@@ -44,7 +44,7 @@ export default function FoodDet() {
                         <p className='text-lg  text-[#383375]'>CaloriesPerServing :<span className='font-semibold text-gray-800'>{food.caloriesPerServing}</span></p>
                         <p className='text-lg  text-[#383375]'>CookTimeMinutes  :<span className='font-semibold text-gray-800'>{food.cookTimeMinutes}</span></p>
                         <p className='text-lg  text-[#383375] '>Difficulty : <span className='font-semibold text-gray-800'>{food.difficulty}</span></p>
-        <div className="flex  items-center gap-4 mt-8">
+        <div className="flex flex-col lg:flex-row  gap-4 mt-8">
   <button
     className="bg-red-800 text-white text-sm lg:text-base font-medium px-6 py-2 rounded-full border border-red-800 transition duration-300 hover:bg-green-500 hover:border-green-500"
     onClick={() => addToFavourites(food)}
