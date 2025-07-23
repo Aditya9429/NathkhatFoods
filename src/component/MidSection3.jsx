@@ -3,7 +3,7 @@ import { FaShippingFast, FaTags, FaServicestack } from "react-icons/fa";
 
 export default function MidSection3() {
   return (
-    <div className="w-full  px-4 mt-20 mb-20">
+    <div className="w-full  px-4 mt-20 mb-50 lg:mb-30">
       <div className="flex flex-col md:flex-row items-start gap-16 h-screen max-w-6xl mx-auto">
         
         

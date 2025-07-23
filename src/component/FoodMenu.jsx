@@ -34,8 +34,8 @@ export default function FoodMenu() {
         <div className='mt-10'>
             <div className='flex flex-col items-center gap-10'>
                 <div className=' text-center'>
-                    <h1 className='text-4xl lg:text-8xl my-font'>Our Media </h1>
-                    <p className='max-w-[350px] mt-4 text-center'>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+                    <h1 className='text-4xl lg:text-8xl my-font font-semibold'>Our Media </h1>
+                    <p className='max-w-[350px] mt-4 text-center text-sm text-gray-500'>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
                 </div>
                 <div className='grid grid-cols-2 gap-10  md:grid-cols:4 lg:grid-cols-7'>
                     {

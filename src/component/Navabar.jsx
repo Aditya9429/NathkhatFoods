@@ -11,23 +11,23 @@ export default function Navbar() {
     return (
         <>
           
-            <div className='sticky top-0 z-50 flex items-center justify-between w-full h-[100px] bg-gray-100 shadow-md px-4'>
-                <h1 className='text-2xl font-bold my-font'>Nathkhat</h1>
+            <div className='sticky top-0 z-50 flex items-center lg:justify-evenly justify-between w-full h-[90px] bg-gray-100 shadow-md px-4'>
+                <h1 className='text-3xl font-bold my-font italic'>Nathkhat</h1>
 
-                <ul className='hidden lg:flex items-center gap-4 text-sm text-black font-semibold'>
+                <ul className='hidden lg:flex items-center gap-4 text-sm text-black my-font'>
                     <NavLink to="/" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Home</NavLink>
                     
-                    <NavLink to="/ourmenu" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">OurMenu</NavLink>
+                    <NavLink to="/about" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">About</NavLink>
                     <NavLink to="/testi" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Pages</NavLink>
                     <NavLink to="/account" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Login</NavLink>
                     <NavLink to="/contact" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Contact</NavLink>
                     <NavLink to="/menu" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Menu</NavLink>
                     <NavLink to="/fav" className="hover:bg-yellow-500 px-3 py-2 rounded-2xl">Favorite</NavLink>
-                    <NavLink to="/booktable">
-                        <button className='border px-4 py-1 rounded-2xl hover:bg-yellow-400 transition'>Book a Table</button>
-                    </NavLink>
+                    
                 </ul>
-
+                       <NavLink to="/booktable">
+                        <button className='hidden border px-4 py-1 rounded-2xl hover:bg-yellow-400 transition lg:block'>Book a Table</button>
+                    </NavLink>
                 
                 <div className="lg:hidden text-2xl cursor-pointer" onClick={toggleSidebar}>
                     <FaBars />
@@ -35,7 +35,7 @@ export default function Navbar() {
             </div>
 
         
-            <div className={`fixed top-[0%] left-[0%] h-full w-[480px] bg-white shadow-lg transform transition-transform duration-300 z-50 ${isSidebarOpen ? 'translate-x-0' : '-translate-y-full'}`}>
+            <div className={`fixed top-[0%] left-[0%] h-full w-[390px] bg-white shadow-lg overflow-hidden transform transition-transform duration-300 z-50 ${isSidebarOpen ? 'translate-x-0' : '-translate-y-full'}`}>
                 <div className="flex justify-between items-center p-4 ">
                     <h2 className="text-xl font-bold">Menu</h2>
                     <RiCloseLine className="text-2xl cursor-pointer" onClick={toggleSidebar} />
@@ -51,11 +51,7 @@ export default function Navbar() {
                     <NavLink to="/booktable" onClick={toggleSidebar}>Book a Table</NavLink>
 
                 </nav>
-                <div>
-                    <div>
-
-                    </div>
-                </div>
+                
             </div>
 
            

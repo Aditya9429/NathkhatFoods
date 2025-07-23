@@ -35,7 +35,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ourmenu" element={<OurMenu />} />
+        <Route path="/about" element={<OurMenu />} />
         <Route path="/service" element={<Services />} />
         <Route path="/testi" element={<Testiminoal />} />
         <Route path="/contact" element={<Contact />} />
@@ -46,7 +46,7 @@ export default function App() {
         <Route path="/fav" element={<FavouriteItem/>} />
         <Route path="/account" element={<Account />}  />   
         <Route path="/recovery" element={<Recovery/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/moreabout" element={<About/>} />
          </Routes>
       <Footer />
     </div>

@@ -1,13 +1,18 @@
 import React from 'react'
 import { FiPhone, FiMessageCircle, FiMapPin } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 export default function MidSection() {
+  const navigate = useNavigate();
+  function handleAbout(){
+navigate('/about')
+  }
   return (
     <div className='w-full flex flex-wrap items-center justify-center mt-17 mb-44 px-4 gap-30'>
       <div className='flex items-center justify-between  relative '>
-        <div className='w-[310px] h-[340px] rounded-2xl'>
+        <div className='w-[290px] lg:w-[310px]  h-[340px] rounded-2xl'>
          <img src="/images/Mid18.jpg"/>
         </div>
-        <div className='flex  items-start  w-[73%] h-[60%] absolute top-1/2 left-[38%] bg-[#474747] py-4  rounded-2xl'>
+        <div className='flex  items-start  w-[79%] lg:w-[73%] h-[60%] absolute  top-[45%] lg:top-1/2  left-[30%] lg:left-[38%] bg-[#474747] py-2   rounded-2xl'>
           <div className='flex flex-col gap-2 px-8 '>
    
             <h1 className='mt-3 text-white font-medium'>Come and visit us</h1>
@@ -37,7 +42,7 @@ export default function MidSection() {
           asperiores libero nemo impedit! Blanditiis voluptates suscipit ad iusto, nihil culpa quod incidunt accusamus a beatae.</p>
         <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate numquam harum vel ab asperiores facilis eos nesciunt.
           Dolores, cumque dicta. Eius dicta voluptatum beatae ducimus voluptas velit repellendus sunt.</p>
-        <button className='py-3 px-3 mt-3 rounded-3xl font-light  border'>More About Us</button>
+        <button className='py-3 px-3 mt-3 rounded-3xl font-light  border hover:scale-112 transition-transform duration-300 hover:bg-red-600 hover:text-white' onClick={handleAbout}>More About Us</button>
       </div>
     </div>
 

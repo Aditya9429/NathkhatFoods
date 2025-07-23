@@ -37,21 +37,32 @@ export default function FoodDet() {
                         <img src={food.image} className='w-full  h-[300px] object-cover rounded-2xl hover:scale-112 transition-transform duration-300' />
                     </div>
                     <div className='w-full lg:w-[50%] flex flex-col gap-4   p-6   rounded-2xl' >
-                        <h1 className='text-3xl font-bold mb-2'>Qualities of Food</h1>
+                        <h1 className='text-3xl font-bold mb-2 my-font'>Qualities of Food</h1>
 
                         <p className='text-lg  text-[#383375]'> Name : <span className='font-semibold text-gray-800'>{food.name}</span></p>
                         <p className='text-lg  text-[#383375]'>Cusisine : <span className='font-semibold text-gray-800'>{food.cuisine}</span></p>
                         <p className='text-lg  text-[#383375]'>CaloriesPerServing :<span className='font-semibold text-gray-800'>{food.caloriesPerServing}</span></p>
                         <p className='text-lg  text-[#383375]'>CookTimeMinutes  :<span className='font-semibold text-gray-800'>{food.cookTimeMinutes}</span></p>
                         <p className='text-lg  text-[#383375] '>Difficulty : <span className='font-semibold text-gray-800'>{food.difficulty}</span></p>
-                        <div className='flex items-center gap-3'>
-                            <button className='border border-1 rounded-3xl py-2 px-4 bg-red-800 text-white font-medium hover:bg-green-500 hover:text-white' onClick={() => addToFavourites(food)}>Add to Favourite</button>
-                            <button className='border rounded-3xl py-2 px-4  hover:bg-red-600 hover:text-white' onClick={() => removeFromFavorties(food.id)}>Remove from Favourite</button>
-                        </div>
+        <div className="flex  items-center gap-4 mt-8">
+  <button
+    className="bg-red-800 text-white text-sm lg:text-base font-medium px-6 py-2 rounded-full border border-red-800 transition duration-300 hover:bg-green-500 hover:border-green-500"
+    onClick={() => addToFavourites(food)}
+  >
+    Add to Favourite
+  </button>
+
+  <button
+    className="text-red-800 border border-red-800 text-sm lg:text-base font-medium px-6 py-2 rounded-full transition duration-300 hover:bg-red-600 hover:text-white"
+    onClick={() => removeFromFavorties(food.id)}
+  >
+    Remove from Favourite
+  </button>
+</div>
                     </div>
                 </div>
                 <div className='w-full flex flex-col lg:flex-row items-center justify-center gap-10 px-10'>
-                    <div className='w-full lg:w-[50%] flex flex-col gap-10 bg-[#f2ebeb] shadow-amber-50  p-5 rounded-2xl h-full ' >
+                    <div className='w-full lg:w-[50%] flex flex-col gap-10 bg-[#eeeff1] shadow-amber-50  p-5 rounded-2xl h-full ' >
                         <h1 className='text-2xl font-semibold '>Instructions</h1>
                         <ul className='list-decimal list-inside text-gray-800 space-y-2'>
                             {food.instructions?.map((item, index) => (
@@ -60,7 +71,7 @@ export default function FoodDet() {
                         </ul>
 
                     </div>
-                    <div className='w-full lg:w-[50%] flex flex-col gap-10 max-w-5xl mx-auto bg-[#f2ebeb] shadow-amber-50 p-5 rounded-2xl h-full'>
+                    <div className='w-full lg:w-[50%] flex flex-col gap-10 max-w-5xl mx-auto bg-[#eeeff1] shadow-amber-50 p-5 rounded-2xl h-full'>
                         <h1 className='text-2xl font-semibold '>Ingredients</h1>
                         <ul className='list-decimal list-inside text-gray-800 space-y-2'>
                             {food.ingredients?.map((item, index) => (

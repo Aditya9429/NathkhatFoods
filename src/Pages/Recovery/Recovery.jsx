@@ -15,7 +15,7 @@ export default function Recovery() {
         </div>
         <div className='w-full flex flex-col max-w-[400px] gap-1'>
             <label htmlFor="">Email</label>
-            <input type="email" placeholder='Enter your email'  className='w-full border outline-none py-3 px-3 rounded-[5px]  focus:ring-1 focus-within:bg-gray-100 focus:border-blue-400'/>
+            <input type="email" placeholder='Enter your email'  className='w-full border outline-none py-3 px-3 rounded-[5px]  focus:ring-1 focus-within:bg-gray-50 focus:border-blue-400'/>
             </div>
       <div className='w-full max-w-[400px]'>
       <button className='w-full bg-blue-600 py-3 font-bold text-white hover:bg-blue-500'>Send</button>

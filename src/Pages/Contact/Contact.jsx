@@ -39,7 +39,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 placeholder="Enter your Name"
-                                className="border rounded-3xl px-4 py-2 focus:ring-2 focus:ring-gray-200 outline-none"
+                                className="border rounded-3xl px-4 py-2 focus:ring-1 focus-within:bg-gray-50 focus:border-blue-400 outline-none  text-gray-500"
                             />
                         </div>
                         <div className="flex flex-col w-full">
@@ -47,7 +47,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 placeholder="Enter your Email"
-                                className="border rounded-3xl px-4 py-2 focus:ring-2 focus:ring-gray-200 outline-none"
+                                className="border rounded-3xl px-4 py-2 focus:ring-1 focus-within:bg-gray-50 focus:border-blue-400 outline-none  text-gray-500"
                             />
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function Contact() {
                         <input
                             type="text"
                             placeholder="Write a subject"
-                            className="border rounded-3xl px-4 py-2 focus:ring-2 focus:ring-gray-200 outline-none"
+                            className="border rounded-3xl px-4 py-2 focus:ring-1 focus-within:bg-gray-50 focus:border-blue-400 outline-none  text-gray-500"
                         />
                     </div>
 
@@ -81,7 +81,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10 text-center md:text-left">
                     {item.map((info, index) => (
                         <div key={index}>
-                            <p className="text-[#737865] font-semibold mb-2">{info.title}</p>
+                            <p className="text-[#555751] font-bold mb-2 my-font">{info.title}</p>
                             <p className="text-[#2C2F24] font-medium text-sm max-w-[200px] mx-auto md:mx-0">
                                 {info.main}
                             </p>

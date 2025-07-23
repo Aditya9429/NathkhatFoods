@@ -6,6 +6,7 @@ import MidSection2 from '../../component/MidSection2'
 import MidSection3 from '../../component/MidSection3'
 import MidSection4 from '../../component/MidSection4'
 import MidSection5 from '../../component/MidSection5'
+import Details from '../../component/Details'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
    <MidSection1/>
    <MidSection2 />
    <MidSection3 />
+   <Details />
    <MidSection4 />
    <MidSection5 />
     </div>
