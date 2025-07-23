@@ -25,12 +25,12 @@ export default function AboutSection2() {
 
   return (
     <div className='w-full relative'>
-      {/* Background Image */}
+
       <div className='w-full'>
         <img src="/images/Resturant.jpg" alt="Restaurant" className='w-full h-auto object-cover' />
       </div>
 
-      <div className='absolute top-[16%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center gap-6 px-4'>
+      <div className='absolute top-[16%] left-1/2 lg:top-[36%] transform -translate-x-1/2 text-center flex flex-col items-center gap-6 px-4'>
         <div className='flex items-center justify-center w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-fuchsia-300 rounded-full'>
           <FaPlay className='text-red-500 text-xl md:text-2xl' />
         </div>
@@ -39,7 +39,7 @@ export default function AboutSection2() {
         </h1>
       </div>
 
-      {/* Info Items */}
+  
       <div className='flex flex-wrap items-center justify-center gap-8 sm:gap-10 md:gap-14 px-4 mt-20'>
         {items.map((item, index) => (
           <div key={index} className='flex items-start gap-4 max-w-sm'>

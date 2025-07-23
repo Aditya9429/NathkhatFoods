@@ -22,17 +22,17 @@ export default function Contact() {
     return (
         <div className="px-4 py-10">
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-10">
-                {/* Header */}
+               
                 <div className="text-center px-4">
-                    <h1 className="text-[#2C2F24] text-4xl md:text-6xl lg:text-[100px] font-bold">Contact Us</h1>
+                    <h1 className="text-[#2C2F24] text-4xl md:text-6xl lg:text-[100px] font-bold my-font">Contact Us</h1>
                     <p className="text-[#495460] text-sm md:text-base mt-4">
                         We consider all the drivers of change and give you the components you need to create real impact.
                     </p>
                 </div>
 
-                {/* Contact Form */}
+             
                 <div className="w-full bg-white p-6 md:p-10 rounded-2xl shadow-md">
-                    {/* Name & Email */}
+                   
                     <div className="flex flex-col md:flex-row gap-6">
                         <div className="flex flex-col w-full">
                             <label className="mb-1 text-sm font-medium">Name</label>

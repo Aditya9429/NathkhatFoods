@@ -30,7 +30,7 @@ export default function Page() {
     return (
         <div className='w-full mt-10 px-4 lg:px-0'>
             <div className='w-full max-w-7xl mx-auto'>
-                <div className=' w-full flex flex-col items-center gap-10 mx-auto'>
+                <div className=' w-full flex flex-col items-center gap-10 mx-auto my-font'>
                     <h1 className='text-4xl font-bold max-w-3xl text-center'>The secret tips & tricks to prepare a perfect burger & pizza for our customers</h1>
                     <img src="images/Page.jpg" className='w-full max-w-xl rounded-2xl object-cover'/>
                 </div>

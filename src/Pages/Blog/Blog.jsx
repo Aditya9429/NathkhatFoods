@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function Blog() {
     const items = [
@@ -75,11 +76,15 @@ export default function Blog() {
             title: "How to prepare the perfect French fries in an air fryer"
         },
     ];
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate('')
+    }
     return (
         <div className='px-4 py-10'>
            <div className='max-w-7xl mx-auto flex flex-col items-center gap-10'>
             <div className='text-center'>
-                <h1 className='text-[#5c4c4c] text-4xl lg:text-[100px] font-semibold'>Our Blog and Articles</h1>
+                <h1 className='text-[#3a3636] text-4xl lg:text-[100px] font-semibold my-font'>Our Blog and Articles</h1>
                 <p className="text-[#495460] text-sm md:text-base mt-4 max-w-1xl">We consider all the drivers of change gives you the components you need to change to create a truly happen</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 m-4'>

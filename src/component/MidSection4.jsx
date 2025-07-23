@@ -57,7 +57,7 @@ export default function MidSection4() {
           {
             data.map((item,index) => (
                 <div key={index} 
-                className='w-full max-w-[320px] flex flex-col   gap-5 bg-[#F9F9F7] px-6 py-8 shadow-md'>
+                className='w-full max-w-[320px] flex flex-col   gap-5 bg-[#F9F9F7] px-6 py-8 shadow-md hover:scale-112 transition-transform duration-300'>
                  
                     <h1 className='font-semibold text-red-800 text-xl'>{item.heading}</h1>
                     <p className='text-[#414536] italic text-base'>{item.review}</p>

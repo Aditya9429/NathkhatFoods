@@ -32,7 +32,7 @@ export default function MidSection() {
         </div>
       </div>
       <div className='w-full flex flex-col items-start gap-4 max-w-[500px]   ml-8 px-3 py-3'>
-        <h1 className='text-3xl font-semibold'>We provide healthy food for your family</h1>
+        <h1 className='text-3xl font-semibold my-font'>We provide healthy food for your family</h1>
         <p className='text-shadow-amber-200 text-[#281f1f]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non atque suscipit ut ipsa
           asperiores libero nemo impedit! Blanditiis voluptates suscipit ad iusto, nihil culpa quod incidunt accusamus a beatae.</p>
         <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate numquam harum vel ab asperiores facilis eos nesciunt.

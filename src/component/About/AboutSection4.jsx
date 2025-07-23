@@ -101,7 +101,7 @@ export default function AboutSection4() {
             <div className='w-full  max-w-5xl  mx-auto px-4'>
                 <div className='flex flex-col md:flex-row items-center justify-between gap-50'>
                     <div className='w-full '>
-                        <h1 className='text-5xl font-bold mb-5'>You can order through apps</h1>
+                        <h1 className='text-5xl font-bold mb-5 my-font'>You can order through apps</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
                     </div>
                     <div className='w-full max-w-3xl flex flex-col  items-center gap-4'>

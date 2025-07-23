@@ -9,7 +9,7 @@ export default function Table() {
         <div className='w-full relative py-5 px-10 '>
             <div className='max-w-4xl mx-auto flex flex-col items-center gap-20'>
                 <div className='text-center'>
-                    <h1 className='text-5xl lg:text-[100px] font-extralight'>Book A Table </h1>
+                    <h1 className='text-5xl lg:text-[100px] font-extralight my-font'>Book A Table </h1>
                     <p className='max-w-[520px] mt-5 text-sm md:text-[18px;\] '>We consider all the drivers of change gives you the components you need to change to create a truly happens</p>
                 </div>
                 <div className='w-full flex flex-col gap-5  bg-white p-6 md:p-10 rounded-2xl shadow-md '>
@@ -37,7 +37,7 @@ export default function Table() {
                         <label htmlFor="" className='mb-2 text-sm font-medium'>Total Person</label>
                         <input text="text" className='border rounded-4xl p-2' />
                     </div>
-                    <button className='w-full bg-amber-500 p-3 rounded-4xl mt-10 font-bold '>Book a Tabel</button>
+                    <button className='w-full bg-amber-500 p-3 rounded-4xl mt-10 font-bold '>Book a Table</button>
                 </div>
             </div >
             <div className='w-full absolute top-[82%] right-[0%]  lg:top-1/2 lg:right-[0%] z-[-100] '>

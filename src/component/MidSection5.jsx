@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function MidSection5() {
   const items = [
@@ -27,6 +28,10 @@ export default function MidSection5() {
       title: "How to prepare the perfect French fries in an air fryer"
     },
   ];
+  const navigate = useNavigate();
+  function handleClick(){
+    navigate('/sevice/')
+  }
 
   return (
     <div className="w-full mt-32 px-4">
@@ -34,8 +39,8 @@ export default function MidSection5() {
         
   
         <div className="flex flex-col md:flex-row items-center justify-between mb-10">
-          <h1 className="text-2xl font-bold text-[#2C2F24]">Our Blog & Articles</h1>
-          <button className="bg-[#AD343E] text-white px-4 py-2 rounded-md mt-4 md:mt-0 hover:bg-[#912b34] transition">
+          <h1 className="text-2xl font-bold text-[#2C2F24] my-font">Our Blog & Articles</h1>
+          <button className="bg-[#AD343E] text-white px-4 py-2 rounded-md mt-4 md:mt-0 hover:bg-[#912b34] transition " onClick={handleClick}>
             Read All Articles
           </button>
         </div>
@@ -60,7 +65,7 @@ export default function MidSection5() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-[50%]">
             {items.map((item) => (
               <div key={item.id} className="bg-[#F9F9F7] rounded-2xl shadow-sm overflow-hidden">
-                <img src={item.img} alt="Blog Thumbnail" className="w-full h-[180px] object-cover" />
+                <img src={item.img} alt="Blog Thumbnail" className="w-full h-[180px] object-cover hover:scale-110 transition-transform duration-300~" />
                 <div className="p-4 flex flex-col gap-2">
                   <p className="text-[#737865] text-sm">{item.date}</p>
                   <p className="text-[#2C2F24] font-medium text-base">{item.title}</p>

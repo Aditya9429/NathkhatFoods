@@ -3,6 +3,7 @@ import { FiCoffee } from 'react-icons/fi';
 import { ImGlass } from 'react-icons/im';
 import { MdRamenDining } from 'react-icons/md';
 import { RiCake2Line } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
 
 export default function Browser() {
   const data = [
@@ -27,10 +28,13 @@ export default function Browser() {
       icon: <RiCake2Line />,
     },
   ];
-
+  const navigate = useNavigate();
+  function handleClick(){
+    navigate('/menu');
+  }
   return (
     <div className='flex flex-col items-center justify-center mt-10 px-4 mb-40'>
-      <h1 className='text-4xl font-semibold mb-8 text-center'>Browse Our Menu</h1>
+      <h1 className='text-4xl font-semibold mb-8 text-center my-font'>Browse Our Menu</h1>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 '>
         {data.map((item, index) => (
@@ -46,7 +50,7 @@ export default function Browser() {
               <p className='text-sm text-gray-600 mb-4'>
                 In the new era of technology we look in the future with certainty and pride for our life.
               </p>
-              <button className='text-sm px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition'>
+              <button className='text-sm px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition' onClick={handleClick}>
                 Explore Menu
               </button>
             </div>

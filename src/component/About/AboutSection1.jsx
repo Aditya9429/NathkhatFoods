@@ -1,6 +1,12 @@
 import React from 'react'
 import { FiPhone, FiMessageCircle, FiMapPin } from 'react-icons/fi';
+
+import { useNavigate } from 'react-router-dom';
 export default function AboutSection1() {
+  const navigate = useNavigate();
+  function handleAbout(){
+    navigate('/about');
+  }
   return (
     <div className='w-full flex flex-wrap items-center justify-center mt-17 mb-44 px-4 gap-30'>
       <div className='flex items-center justify-between  relative '>
@@ -32,12 +38,12 @@ export default function AboutSection1() {
         </div>
       </div>
       <div className='w-full flex flex-col items-start gap-4 max-w-[500px]   ml-8 px-3 py-3'>
-        <h1 className='text-3xl font-semibold'>We provide healthy food for your family</h1>
+        <h1 className='text-3xl font-semibold my-font'>We provide healthy food for your family</h1>
         <p className='text-shadow-amber-200 text-[#281f1f]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non atque suscipit ut ipsa
           asperiores libero nemo impedit! Blanditiis voluptates suscipit ad iusto, nihil culpa quod incidunt accusamus a beatae.</p>
         <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate numquam harum vel ab asperiores facilis eos nesciunt.
           Dolores, cumque dicta. Eius dicta voluptatum beatae ducimus voluptas velit repellendus sunt.</p>
-        <button className='py-3 px-3 mt-3 rounded-3xl font-light  border'>More About Us</button>
+        <button className='py-3 px-3 mt-3 rounded-3xl font-semibold  border border-0.5 hover:bg-red-800  hover:text-white' onClick={handleAbout}>More About Us</button>
       </div>
     </div>
 
