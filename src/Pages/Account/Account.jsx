@@ -11,7 +11,7 @@ export default function Account() {
     return (
         <div className='mt-10 p-10'>
             <div className='w-full flex flex-col items-center justify-center  max-w-[500px] mx-auto gap-10   rounded-2xl p-5'>
-                <div className='text-4xl my-font text-center '>
+                <div className='text-5xl  lg:text-7xl my-font text-center font-bold'>
                     <h1>{currentState}</h1>
                 </div>
                 <div className='w-full flex flex-col gap-5 max-w-[500px]'>

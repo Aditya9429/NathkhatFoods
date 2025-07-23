@@ -27,14 +27,14 @@ export default function AboutSection2() {
     <div className='w-full relative'>
 
       <div className='w-full'>
-        <img src="/images/Resturant.jpg" alt="Restaurant" className='w-full h-auto object-cover' />
+        <img src="/images/Resturant.jpg" alt="Restaurant" className='w-full h-auto object-cover bg-gray-300' />
       </div>
 
-      <div className='absolute top-[16%] left-1/2 lg:top-[36%] transform -translate-x-1/2 text-center flex flex-col items-center gap-6 px-4'>
+      <div className='absolute top-[7%] left-1/2 lg:top-[36%] transform -translate-x-1/2 text-center flex flex-col items-center gap-2 px-4'>
         <div className='flex items-center justify-center w-[60px] h-[60px] md:w-[80px] md:h-[80px] bg-fuchsia-300 rounded-full'>
           <FaPlay className='text-red-500 text-xl md:text-2xl' />
         </div>
-        <h1 className='hidden text-lg sm:text-2xl  lg:block md:text-3xl lg:text-4xl font-semibold text-white max-w-[90vw]'>
+        <h1 className=' text-lg sm:text-2xl  lg:block md:text-3xl lg:text-4xl font-semibold text-white max-w-[500px]'>
           Feel the authentic & original taste from us
         </h1>
       </div>

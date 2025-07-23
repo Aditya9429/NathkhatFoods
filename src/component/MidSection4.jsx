@@ -29,30 +29,11 @@ export default function MidSection4() {
             city : "Los Angeles,CA"
         },
     ]
-    const bestFoodFor = [
-    "cravings",
-    "mood",
-    "family",
-    "date night",
-    "cheat day",
-    "lunch break",
-    "celebrations",
-    "weekend",
-    "health kick",
-    "late night hunger"
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-     setItem((prev) => (prev+1) % bestFoodFor.length)
-    },2000)
-
-    return () =>  clearInterval(interval);
-  })
+  
   return (
     <div className='w-full py-16 bg-white px-4'>
       <div className='flex flex-col items-center max-w-6xl mx-auto gap-10'>
-        <h1 className='text-4xl sm:text-5xl font-bold text-center text-[#2C2F24]'>What our Customer Say {bestFoodFor[item]} </h1>
+        <h1 className='text-4xl sm:text-5xl font-bold text-center text-[#2C2F24]'>What our Customer Say  </h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 '>
           {
             data.map((item,index) => (

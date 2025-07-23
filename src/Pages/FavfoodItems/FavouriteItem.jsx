@@ -12,7 +12,7 @@ export default function Favorites() {
                 <h1 className='text-3xl font-bold mb-6 text-center my-font'>My Favorite Recipes</h1>
 
                 {favorites.length == 0 ? (
-                    <p className='text-gray-600 text-lg'>No favorites added yet.</p>
+                    <p className='text-gray-600 text-lg text-center'>No favorites added yet.</p>
                 ) : (
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                         {favorites.map((food) => (

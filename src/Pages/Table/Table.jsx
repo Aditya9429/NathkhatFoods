@@ -38,8 +38,8 @@ export default function Table() {
                     <button className='w-full bg-amber-500 p-3 rounded-4xl mt-10 font-bold '>Book a Table</button>
                 </div>
             </div >
-            <div className='w-full  absolute top-[78%] right-[0%]  lg:top-1/2 lg:right-[0%] z-[-100] '>
-                <img src="/images/Map.png"  className='w-full '/>
+            <div className='w-full  absolute top-[50%] right-[0%]  lg:top-1/2 lg:right-[0%] z-[-100] '>
+                <img src="/images/Map.png"  className='w-full h-[500px] object-cover'/>
             </div>
         </div>
     )

@@ -99,16 +99,16 @@ export default function AboutSection4() {
     return (
         <div className='w-full mt-20'>
             <div className='w-full  max-w-5xl  mx-auto px-4'>
-                <div className='flex flex-col md:flex-row items-center justify-between gap-50'>
-                    <div className='w-full '>
+                <div className='flex flex-col md:flex-row items-center justify-between gap-30'>
+                    <div className='w-full ml-10 lg:ml='>
                         <h1 className='text-5xl font-bold mb-5 my-font'>You can order through apps</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
+                        <p className='max-w-[300px] text-gray-600'>You can order through the app and also explore a variety of homemade and unique recipes shared by other users. Whether you're looking to try something new or order your favorite dish, our app makes it easy. </p>
                     </div>
-                    <div className='w-full max-w-3xl flex flex-col  items-center gap-4'>
+                    <div className='w-full max-w-2xl flex flex-col  items-center gap-4'>
                         <div className='flex items-center gap-3 '>
                             {
                                 firsthalf.map((item) => (
-                                    <div key={item.id} className={`px-5 py-3 lg:px-8 lg:py-3 rounded-[10px]   bg-[#F9F9F7] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
+                                    <div key={item.id} className={`px-3 py-3 lg:px-8 lg:py-3 shadow-2xl  rounded-[10px]   bg-[#F9F9F7] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
                                         <p>{item.title}</p>
                                     </div>
                                 ))
@@ -117,7 +117,7 @@ export default function AboutSection4() {
                         <div className='flex items-center gap-4'>
                             {
                                 secondhalf.map((item) => (
-                                    <div key={item.id} className={` px-5 py-3 lg:px-8 lg:py-3 bg-[#F9F9F7] rounded-[10px] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
+                                    <div key={item.id} className={` px-3 py-3 lg:px-8 lg:py-3 bg-[#F9F9F7] shadow-2xl rounded-[10px] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
                                         <p>{item.title}</p>
                                     </div>
                                 ))
@@ -126,7 +126,7 @@ export default function AboutSection4() {
                         <div className='flex items-center gap-5'>
                             {
                                 thirdhalf.map((item) => (
-                                    <div key={item.id} className={` px-5 py-3 lg:px-8 lg:py-3 rounded-[10px] bg-[#F9F9F7] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
+                                    <div key={item.id} className={` px-3 py-3 lg:px-8 lg:py-3 rounded-[10px] shadow-2xl bg-[#F9F9F7] ${item.textColor} ${item.fontStyle} ${item.fontSize} ${item.font}`}>
                                         <p>{item.title}</p>
                                     </div>
                                 ))
